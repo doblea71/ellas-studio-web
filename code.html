@@ -1,0 +1,408 @@
+<!doctype html>
+
+<html class="scroll-smooth" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Ellas Studio | Contadas con arte</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- AOS Library for modern scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#7020DF",
+            "primary-light": "#9E70F8",
+            "primary-container": "#C0A2F9",
+            "accent-rose": "#F5C7C1",
+            "accent-mint": "#D1EAD9",
+            background: "#f8f5ff",
+            "on-background": "#2e2e35",
+            surface: "#ffffff",
+            "on-surface": "#2e2e35",
+            "surface-variant": "#dddbe8",
+            "on-surface-variant": "#5b5b63",
+          },
+          borderRadius: {
+            DEFAULT: "1rem",
+            lg: "2rem",
+            xl: "3rem",
+            full: "9999px",
+          },
+          fontFamily: {
+            headline: ["Plus Jakarta Sans"],
+            body: ["Be Vietnam Pro"],
+            label: ["Be Vietnam Pro"],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        "FILL" 0,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
+    }
+
+    .bg-mesh {
+      background-color: #f8f5ff;
+      background-image: radial-gradient(at 0% 0%,
+          rgba(245, 199, 193, 0.3) 0px,
+          transparent 50%),
+        radial-gradient(at 100% 0%,
+          rgba(209, 234, 217, 0.3) 0px,
+          transparent 50%);
+    }
+
+    .mockup-shadow {
+      box-shadow:
+        0 20px 25px -5px rgba(112, 32, 223, 0.1),
+        0 40px 60px -15px rgba(112, 32, 223, 0.2),
+        0 0 40px 0 rgba(112, 32, 223, 0.05);
+    }
+  </style>
+</head>
+
+<body class="bg-background font-body text-on-surface antialiased overflow-x-hidden">
+  <!-- Top Navigation Bar -->
+  <nav
+    class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm shadow-primary/5 flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+    <div class="flex items-center gap-2">
+      <img alt="Ellas Studio Logo" class="h-10 w-auto"
+        src="https://lh3.googleusercontent.com/aida/ADBb0uiWk9VwwtWqrfOloUJua4fYNrxL9KDUDeny96hlD-plNelEcV8BksL9jhSyVIlZt3USUvhl5NjG84hIzFCNaBKxwgl80sV4pFgUyleiWTqY5OT14xpS-kEomZsBm_sBr_3bTFX4WAkPImXs-auTEB1YMszmLqspajjAL_NlVBYxrS0ilC89lHh_XkE43zg2PARuurbBZaYJFfPaDBHYxe--BonLkZ0yn2e6DjI4S8Ob9_iuHYH9DYdGXwGOKlhmqzZvYdsjatIc7vg" />
+      <span class="text-2xl font-black text-primary tracking-tighter font-headline">Ellas Studio</span>
+    </div>
+    <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+      <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#esencia">Esencia</a>
+      <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#sneak-peek">Sneak
+        Peek</a>
+      <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#app-focus">Descarga</a>
+      <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#cero-friccion">Cero
+        Fricción</a>
+    </div>
+    <a class="bg-primary text-white px-6 py-2.5 rounded-full font-bold hover:bg-primary-light transition-all duration-300 active:scale-95 shadow-md shadow-primary/20"
+      href="https://ellas-studio-app.vercel.app/guest-booking">
+      Agenda tu cita
+    </a>
+  </nav>
+  <!-- Hero Section -->
+  <header class="relative pt-32 pb-20 px-8 min-h-[90vh] flex items-center overflow-hidden bg-mesh">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="z-10" data-aos="fade-up" data-aos-duration="1000">
+        <span
+          class="inline-block px-4 py-1.5 rounded-full bg-accent-rose text-primary-dim text-xs font-bold tracking-widest uppercase mb-6">Expertas
+          en Belleza</span>
+        <h1 class="font-headline text-6xl md:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight mb-8">
+          Tus cejas y uñas, <br />
+          <span class="text-primary italic">contadas con arte</span>
+        </h1>
+        <p class="text-xl text-on-surface-variant mb-10 max-w-lg leading-relaxed">
+          Elevamos tu estilo personal a través de técnicas maestras y un toque
+          de diseño único. No solo es belleza, es tu historia contada por
+          manos expertas.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a class="bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-xl text-lg font-bold text-center transition-all duration-300 shadow-xl shadow-primary/30 flex items-center justify-center gap-2 group"
+            href="https://ellas-studio-app.vercel.app/guest-booking">
+            Agenda tu cita ahora
+            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+          </a>
+          <a class="bg-white text-primary px-8 py-4 rounded-xl text-lg font-bold text-center transition-all duration-300 hover:bg-accent-mint/30 border border-primary/10"
+            href="#sneak-peek">
+            Ver galería
+          </a>
+        </div>
+      </div>
+      <div class="relative" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-4 pt-12">
+            <div
+              class="rounded-xl overflow-hidden shadow-2xl transform -rotate-3 hover:rotate-0 transition-all duration-500 border-4 border-white">
+              <img alt="Nail art lilac" class="w-full h-64 object-cover"
+                src="assets/images/Professional_nail_art_showing_sculpture.png" />
+            </div>
+            <div
+              class="rounded-xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition-all duration-500 border-4 border-white">
+              <img alt="Eyebrows close up" class="w-full h-80 object-cover"
+                src="assets/images/Professional_beauty_close-up_showing_eye.png" />
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div
+              class="rounded-xl overflow-hidden shadow-2xl transform rotate-6 hover:rotate-0 transition-all duration-500 border-4 border-white">
+              <img alt="Manicurist at work" class="w-full h-80 object-cover" src="assets/images/17702066745622.jpg" />
+            </div>
+            <div
+              class="rounded-xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-all duration-500 border-4 border-white">
+              <img alt="Studio interior" class="w-full h-64 object-cover"
+                src="assets/images/local_ellas_studio_photo.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Nuestra Esencia Section -->
+  <section class="py-32 px-8 bg-accent-rose/20" id="esencia">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div class="order-2 md:order-1" data-aos="fade-right" data-aos-duration="1000">
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg shadow-accent-rose/10 rotate-1 relative overflow-hidden border border-accent-rose/30">
+            <div class="absolute top-0 right-0 p-4 opacity-10">
+              <span class="material-symbols-outlined text-6xl text-primary">format_quote</span>
+            </div>
+            <p class="text-2xl font-headline font-bold text-on-surface leading-snug mb-6">
+              "En Ellas Studio, no creemos en las soluciones genéricas.
+              Creemos en ti."
+            </p>
+            <p class="text-on-surface-variant leading-relaxed text-lg">
+              Somos esa amiga experta que te dice la verdad: qué diseño te
+              favorece más, cómo cuidar tu mirada y por qué tus uñas merecen
+              ser una obra de arte. Nuestra esencia es el rediseño
+              personalizado, escuchando lo que quieres y aportando nuestra
+              maestría técnica para que salgas sintiéndote imparable.
+            </p>
+          </div>
+        </div>
+        <div class="order-1 md:order-2 text-center md:text-left" data-aos="fade-left" data-aos-duration="1000"
+          data-aos-delay="200">
+          <h2 class="text-4xl md:text-5xl font-headline font-extrabold mb-6 tracking-tight">
+            Nuestra <span class="text-primary">Esencia</span>
+          </h2>
+          <p class="text-lg text-on-surface-variant mb-8 italic">
+            Una experiencia honesta, cercana y vibrante.
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+            <div class="flex items-center gap-2 bg-accent-mint px-4 py-2 rounded-full border border-primary/5">
+              <span class="material-symbols-outlined text-primary"
+                style="font-variation-settings: &quot;FILL&quot; 1">verified</span>
+              <span class="font-bold text-sm text-primary">Expertas</span>
+            </div>
+            <div class="flex items-center gap-2 bg-accent-rose px-4 py-2 rounded-full border border-primary/5">
+              <span class="material-symbols-outlined text-primary"
+                style="font-variation-settings: &quot;FILL&quot; 1">favorite</span>
+              <span class="font-bold text-sm text-primary">Honestas</span>
+            </div>
+            <div class="flex items-center gap-2 bg-accent-mint px-4 py-2 rounded-full border border-primary/5">
+              <span class="material-symbols-outlined text-primary"
+                style="font-variation-settings: &quot;FILL&quot; 1">palette</span>
+              <span class="font-bold text-sm text-primary">Creativas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sneak Peek Gallery Section -->
+  <section class="py-32 px-8 bg-white" id="sneak-peek">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-headline font-extrabold mb-4">
+          Sneak <span class="text-primary">Peek</span>
+        </h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto">
+          Un vistazo a las creaciones que han salido de nuestro atelier esta
+          semana.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+        <div class="rounded-xl overflow-hidden group relative border-4 border-accent-mint/20" data-aos="zoom-in"
+          data-aos-duration="800">
+          <img alt="Holographic purple nails"
+            class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110"
+            src="assets/images/1769193653649.jpg" />
+          <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+        <div class="rounded-xl overflow-hidden group relative mt-12 md:mt-0 border-4 border-accent-rose/20"
+          data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+          <img alt="Architectural eyebrows"
+            class="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
+            src="assets/images/1770134483181.png" />
+          <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+        <div class="rounded-xl overflow-hidden group relative border-4 border-accent-mint/20" data-aos="zoom-in"
+          data-aos-duration="800" data-aos-delay="200">
+          <img alt="Soft pink manicure"
+            class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+            src="assets/images/Professional_beauty_of_hands_display.png" />
+          <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+        <div class="rounded-xl overflow-hidden group relative mt-12 md:mt-24 border-4 border-accent-rose/20"
+          data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+          <img alt="Lash lift result"
+            class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
+            src="assets/images/Cejas_5-Ellas-Studio.png" />
+          <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+      </div>
+      <div
+        class="bg-accent-mint/30 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 border border-accent-mint">
+        <p class="font-bold text-primary text-center md:text-left">
+          ¿Quieres ver más? Descubre nuestra galería completa en la App.
+        </p>
+        <a class="bg-primary text-white px-6 py-3 rounded-full font-bold whitespace-nowrap hover:bg-primary-light transition-colors shadow-lg shadow-primary/20"
+          href="https://ellas-studio-app.vercel.app/">
+          Explorar la App
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- App Focus Section -->
+  <section class="py-32 px-8 bg-accent-mint/10 overflow-visible" id="app-focus">
+    <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-2xl p-12 lg:p-20 relative border border-accent-mint/20">
+      <!-- Decorative circle -->
+      <div class="absolute -top-24 -right-24 w-64 h-64 bg-accent-rose/40 rounded-full blur-3xl"></div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div class="z-10" data-aos="fade-right" data-aos-duration="1000">
+          <h2 class="text-4xl md:text-6xl font-headline font-extrabold mb-8 tracking-tight leading-tight">
+            Lleva a Ellas Studio <br />
+            <span class="text-primary">en tu bolsillo</span>
+          </h2>
+          <div class="space-y-6 text-lg text-on-surface-variant mb-12">
+            <div class="flex gap-4 items-center">
+              <div class="w-12 h-12 bg-accent-rose rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-primary text-2xl">artist</span>
+              </div>
+              <p>
+                Explora la <strong>interfaz real</strong> de nuestra App y
+                elige a tu artista favorita consultando su estilo único antes
+                de reservar.
+              </p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <div class="w-12 h-12 bg-accent-mint rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-primary text-2xl">calendar_month</span>
+              </div>
+              <p>
+                Gestiona tus próximas citas con un solo clic y mantén el
+                control total de tu agenda de belleza.
+              </p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <div class="w-12 h-12 bg-accent-rose rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-primary text-2xl">auto_awesome</span>
+              </div>
+              <p>
+                Accede al <strong>catálogo exclusivo</strong> y promociones
+                que solo verás dentro de nuestra experiencia digital.
+              </p>
+            </div>
+          </div>
+          <a class="inline-block bg-primary text-white px-10 py-5 rounded-full text-xl font-bold hover:scale-105 transition-all shadow-xl shadow-primary/30"
+            href="https://ellas-studio-app.vercel.app/">
+            Descarga y Regístrate
+          </a>
+        </div>
+        <div class="relative flex justify-center lg:justify-end" data-aos="fade-left" data-aos-duration="1200"
+          data-aos-delay="200">
+          <!-- Real Device Frame with Screenshot - Increased size and break-out effect -->
+          <div
+            class="relative z-20 w-full max-w-[520px] lg:-mr-18 lg:-my-24 transform hover:scale-[1.02] transition-transform duration-500">
+            <img alt="App Interface Screenshot" class="w-full h-auto rounded-[3rem] border-on-surface"
+              src="assets/images/panel_citas_agendadas.png" />
+            <div class="mockup-shadow rounded-[3.5rem] p-2">
+            </div>
+          </div>
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-20">
+            <div class="w-full h-full bg-accent-mint rounded-full blur-3xl"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- QR Code Section (Cero Fricción) -->
+  <section class="py-32 px-8 bg-accent-rose/10 overflow-visible" id="cero-friccion">
+    <div class="max-w-7xl mx-auto">
+      <div
+        class="bg-accent-mint/40 rounded-3xl p-12 md:p-20 border border-accent-mint/30 flex flex-col lg:flex-row items-center gap-16 relative overflow-visible">
+        <div class="flex-1 z-10" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="text-4xl md:text-5xl font-headline font-extrabold mb-8 tracking-tight text-on-surface">
+            Agenda con <span class="text-primary">Cero Fricción</span>
+          </h2>
+          <p class="text-xl text-on-surface-variant leading-relaxed mb-10">
+            Nuestra App genera un código QR exclusivo. Escanéalo para agendar
+            tu cita al instante, sin registros obligatorios ni complicaciones.
+            Ideal para quienes buscan rapidez y comodidad en su día a día.
+          </p>
+          <div class="flex items-center gap-6">
+            <div class="flex -space-x-4">
+              <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-200"></div>
+              <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-300"></div>
+              <div class="w-12 h-12 rounded-full border-4 border-white bg-slate-400"></div>
+            </div>
+            <p class="text-sm font-bold text-on-surface-variant italic">
+              Más de 23 citas agendadas vía QR este mes.
+            </p>
+          </div>
+        </div>
+        <div class="w-full lg:w-2/5 flex justify-center lg:justify-end" data-aos="zoom-in" data-aos-duration="1200"
+          data-aos-delay="200">
+          <!-- QR Mockup - Increased size and break-out effect -->
+          <div
+            class="relative group z-20 w-full max-w-[540px] lg:-mr-12 lg:-my-32 transform rotate-3 hover:rotate-0 transition-all duration-500">
+            <div class="absolute -inset-4 rounded-[3.5rem] group-hover:opacity-80 transition-opacity"></div>
+            <div class="relative z-10 p-3 rounded-[3rem]">
+              <img alt="QR Booking Feature" class="w-full h-auto rounded-[2.5rem]" src="assets/images/codigo_qr.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer
+    class="w-full bg-white border-t border-accent-rose/20 rounded-t-[3rem] mt-20 flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 font-body text-sm">
+    <div class="flex flex-col gap-4 items-center md:items-start">
+      <div class="flex items-center gap-2">
+        <img alt="Ellas Studio Footer Logo" class="h-8 w-auto" src="assets/logo/logo-ellas-studio-new.png" />
+        <span class="text-xl font-black text-primary">Ellas Studio</span>
+      </div>
+      <p class="text-on-surface-variant">
+        © 2025 Ellas Studio. Contadas con arte.
+      </p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-8 text-primary font-bold">
+      <a class="text-on-surface-variant hover:text-primary transition-colors"
+        href="https://www.instagram.com/ellastudio24?utm_source=ig_web_button_share_sheet">Instagram</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">TikTok</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">WhatsApp</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors" href="terminos.html">Términos</a>
+    </div>
+    <div class="flex flex-col items-center md:items-end gap-4">
+      <a class="bg-primary text-white px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-md shadow-primary/20"
+        href="https://ellas-studio-app.vercel.app/">
+        Regístrate ahora
+      </a>
+      <div class="flex gap-4">
+        <span
+          class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer transition-colors">share</span>
+        <span
+          class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer transition-colors">location_on</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true, // repetir animaciones
+      mirror: false, // repetir animaciones al hacer scroll hacia arriba
+      offset: 100, // distancia en pixeles desde el bottom de la pantalla para que se active la animacion
+    });
+  </script>
+</body>
+
+</html>
