@@ -29,7 +29,7 @@ Esta es la página oficial de aterrizaje (Landing Page) para **Ellas Studio**, u
 
 ```bash
 .
-├── code.html           # Página principal (Landing Page)
+├── index.html          # Página principal (Landing Page)
 ├── terminos.html       # Página de Términos y Privacidad
 ├── assets/             # Recursos visuales e imágenes
 ├── DESIGN.md           # Tokens de diseño y guías visuales
