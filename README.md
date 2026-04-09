@@ -1,5 +1,7 @@
 # Ellas Studio Landing Page ✨
 
+url: [Ellas Studio Landing Page](https://doblea71.github.io/ellas-studio-web/)
+
 ![Ellas Studio Banner](https://lh3.googleusercontent.com/aida/ADBb0uiWk9VwwtWqrfOloUJua4fYNrxL9KDUDeny96hlD-plNelEcV8BksL9jhSyVIlZt3USUvhl5NjG84hIzFCNaBKxwgl80sV4pFgUyleiWTqY5OT14xpS-kEomZsBm_sBr_3bTFX4WAkPImXs-auTEB1YMszmLqspajjAL_NlVBYxrS0ilC89lHh_XkE43zg2PARuurbBZaYJFfPaDBHYxe--BonLkZ0yn2e6DjI4S8Ob9_iuHYH9DYdGXwGOKlhmqzZvYdsjatIc7vg)
 
 > **Tus cejas y uñas, contadas con arte.**
@@ -40,12 +42,13 @@ Esta es la página oficial de aterrizaje (Landing Page) para **Ellas Studio**, u
 
 Como es un proyecto estático, puedes visualizarlo de dos formas:
 
-1.  **Localmente**: Abre el archivo `code.html` directamente en cualquier navegador moderno.
-2.  **Servidor de Desarrollo**: Si usas VS Code, te recomendamos la extensión *Live Server* para previsualizar los cambios en tiempo real.
+1. **Localmente**: Abre el archivo `code.html` directamente en cualquier navegador moderno.
+2. **Servidor de Desarrollo**: Si usas VS Code, te recomendamos la extensión *Live Server* para previsualizar los cambios en tiempo real.
 
 ## 📱 Ecosistema Ellas Studio
 
 Este sitio web es parte del ecosistema digital de **Ellas Studio**, que incluye:
+
 - **Ellas Studio App**: Aplicación móvil (Flutter) para la gestión de citas y catálogo exclusivo.
 - **Backend**: Gestión de datos segura a través de **Supabase**.
 
@@ -54,6 +57,7 @@ Este sitio web es parte del ecosistema digital de **Ellas Studio**, que incluye:
 ## 📸 Galería de Muestra
 
 El sitio incluye vistas de:
+
 - **Artesanía en Uñas**: Diseños esculpidos y arte profesional.
 - **Miradas Arquitectónicas**: Diseño de cejas y lash lift.
 - **Atelier**: Vistas del local físico en toda su esencia.
@@ -64,6 +68,7 @@ Desarrollado con pasión para elevar la marca **Ellas Studio**.
 
 - **Instagram**: [@ellastudio24](https://www.instagram.com/ellastudio24)
 - **Web App**: [Agenda tu cita](https://ellas-studio-app.vercel.app/)
+- **GitHub Page**: [Ver código](https://doblea71.github.io/ellas-studio-web/)
 
 ---
 © 2025 Ellas Studio. Todos los derechos reservados.
